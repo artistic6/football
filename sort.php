@@ -1,7 +1,6 @@
 <?php
 
-$inFile = __DIR__ . DIRECTORY_SEPARATOR . "nopeData.php";
-$outFile = __DIR__ . DIRECTORY_SEPARATOR . "nope.php";
+$inFile = __DIR__ . DIRECTORY_SEPARATOR . "nope.php";
 
 $inData = include($inFile);
 sort($inData);
@@ -13,4 +12,4 @@ foreach($inData as $inTeam){
 }
 $outText .= "];\n";
 
-file_put_contents($outFile, $outText);
+file_put_contents($inFile, $outText);
